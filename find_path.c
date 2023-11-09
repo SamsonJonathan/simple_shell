@@ -75,7 +75,7 @@ char **tokenize_path(data_of_program *data)
 	for (i = 0; PATH[i]; i++)
 	{
 		if (PATH[i] == ':')
-			counter_directories++;
+			counter_directories++;/* counter dir */
 	}
 
 	/* reserve space for the array of pointers */
@@ -91,7 +91,7 @@ char **tokenize_path(data_of_program *data)
 
 	free(PATH);
 	PATH = NULL;
-	return (tokens);
+	return (tokens);/* array of path directories */
 
 }
 
