@@ -28,7 +28,7 @@ int _getline(data_of_program *data)
 		/* read from the file descriptor int to buff */
 		bytes_read = read(data->file_descriptor, &buff, BUFFER_SIZE - 1);
 		if (bytes_read == 0)
-			return (-1);
+			return (-1);/* reading computing byte */
 
 		/* split lines for \n or ; */
 		i = 0;
@@ -92,5 +92,5 @@ int check_logic_ops(char *array_commands[], int i, char array_operators[])
 			j = 0;
 		}
 	}
-	return (i);
+	return (i);/* index of the last command in the array_commands */
 }
