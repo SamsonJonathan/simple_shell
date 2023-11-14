@@ -29,7 +29,7 @@ int builtins_list(data_of_program *data)
 /*execute the function, and return the return value of the function*/
 			return (options[iterator].function(data));
 		}
-/*if there is no match return -1 */
+/*if there is no match */
 	}
-	return (-1);
+	return (-1);/*if there is no match return -1 */
 }

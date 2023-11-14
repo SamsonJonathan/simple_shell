@@ -57,7 +57,7 @@ int _print_error(int errorcode, data_of_program *data)
 		_printe(data->command_name);
 		_printe(": not found\n");
 	}
-	else if (errorcode == 126)
+	else if (errorcode == 126)/* error code to print */
 	{
 		_printe(data->program_name);
 		_printe(": ");
@@ -66,5 +66,5 @@ int _print_error(int errorcode, data_of_program *data)
 		_printe(data->command_name);
 		_printe(": Permission denied\n");
 	}
-	return (0);
+	return (0);/* is returned, and errno is set */
 }

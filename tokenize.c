@@ -29,7 +29,7 @@ void tokenize(data_of_program *data)
 	if (data->tokens == NULL)
 	{
 		perror(data->program_name);
-		exit(errno);
+		exit(errno);/* exit */
 	}
 	i = 0;
 	data->tokens[i] = str_duplicate(_strtok(data->input_line, delimiter));
