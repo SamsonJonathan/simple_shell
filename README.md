@@ -1,1 +1,1 @@
-Simple shell group project
+learning what Simple shell group project is all about 
