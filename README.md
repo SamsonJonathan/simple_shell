@@ -1,1 +1,1 @@
-i and my partner are learning simple shell
+simple shell GROUP PROJECT
